@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Gallery from './components/Gallery/Gallery';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { route: 'home' };
+  }
+
+  onRouteChange = (route) => {
+    this.setState({ route: route });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app">
+        <Header />
+        { this.state.route === 'gallery' ?
+          <Gallery /> :
+          <Home onRouteChange={this.onRouteChange} />
+        }
+        <Footer />
       </div>
     );
   }

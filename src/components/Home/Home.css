@@ -1,0 +1,21 @@
+.home {
+  background: url(../../images/bg-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-top: 250px;
+}
+
+.btn-ghost {
+  background: transparent;
+}
+
+.btn-ghost.btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-ghost.btn-white:hover {
+  color: #3c3c3c;
+  background: #fff;
+}
