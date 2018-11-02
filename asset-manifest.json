@@ -1,7 +1,7 @@
 {
   "main.css": "/react-photo-gallery/static/css/main.1d6e2fd3.chunk.css",
-  "main.js": "/react-photo-gallery/static/js/main.343161ef.chunk.js",
-  "main.js.map": "/react-photo-gallery/static/js/main.343161ef.chunk.js.map",
+  "main.js": "/react-photo-gallery/static/js/main.78745a2b.chunk.js",
+  "main.js.map": "/react-photo-gallery/static/js/main.78745a2b.chunk.js.map",
   "static/css/1.10f6b80a.chunk.css": "/react-photo-gallery/static/css/1.10f6b80a.chunk.css",
   "static/js/1.6aff01a9.chunk.js": "/react-photo-gallery/static/js/1.6aff01a9.chunk.js",
   "static/js/1.6aff01a9.chunk.js.map": "/react-photo-gallery/static/js/1.6aff01a9.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/Home.css": "/react-photo-gallery/static/media/bg-home.b1c6271b.jpg",
   "static/css/main.1d6e2fd3.chunk.css.map": "/react-photo-gallery/static/css/main.1d6e2fd3.chunk.css.map",
   "index.html": "/react-photo-gallery/index.html",
-  "precache-manifest.271f720bcda3cfa905d6442991312d72.js": "/react-photo-gallery/precache-manifest.271f720bcda3cfa905d6442991312d72.js",
+  "precache-manifest.67896953292c2b49947f9e2a67f8d710.js": "/react-photo-gallery/precache-manifest.67896953292c2b49947f9e2a67f8d710.js",
   "service-worker.js": "/react-photo-gallery/service-worker.js"
 }
