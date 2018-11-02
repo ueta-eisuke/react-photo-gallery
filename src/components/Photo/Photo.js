@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardBody, CardText } from 'reactstrap';
 import './Photo.css';
-
-const MAX_TEXT_SIZE = 20;
 
 class Photo extends Component {
 
@@ -10,18 +8,10 @@ class Photo extends Component {
     window.open(url, '_blank');
   }
 
-  ajustText = (text) => {
-    return text.length > MAX_TEXT_SIZE ? 
-      text.substring(0, MAX_TEXT_SIZE - 1) : text;
-  }
-
   render() {
     const photo = this.props.photo;
-    const tags = photo.tags.length > MAX_TEXT_SIZE ? 
-      photo.tags.substring(0, MAX_TEXT_SIZE - 1) : photo.tags;
-
     return (
-      <Card key={photo.id} className="mb-3">
+      <Card key={photo.id} className="mb-3 text-center">
         <CardImg 
           onClick={() => this.onClick(photo.pageURL)} 
           top 
@@ -30,8 +20,7 @@ class Photo extends Component {
           src={photo.webformatURL}
         />
         <CardBody>
-          <CardTitle>{photo.user}</CardTitle>
-          <CardText>{tags}</CardText>
+          <CardText>{photo.user}</CardText>
         </CardBody>
       </Card>
     );
