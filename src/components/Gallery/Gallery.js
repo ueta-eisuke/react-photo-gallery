@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Photo from '../Photo/Photo';
+import PhotoList from '../PhotoList/PhotoList';
 import SearchBox from '../SearchBox/SearchBox';
 import './Gallery.css';
 
@@ -30,10 +30,6 @@ class Gallery extends Component {
       .catch(console.log);
   }
 
-  renderPhoto = (photo) => {
-    return <Col key={photo.id} md="4"><Photo photo={photo} /></Col>;
-  }
-
   render() {
     return (
         <Container className="gallery-container">
@@ -42,13 +38,7 @@ class Gallery extends Component {
               <SearchBox search={this.search} />  
             </Col>
           </Row>
-          <Row>
-              { 
-                this.state.photos.map((photo) => {
-                  return this.renderPhoto(photo);
-                })
-              }
-          </Row>
+          <PhotoList photos={this.state.photos} />
         </Container>
     );
   }
