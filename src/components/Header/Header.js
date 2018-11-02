@@ -17,12 +17,12 @@ class Header extends Component {
     return (
       <Navbar fixed="top" color="dark" dark>
         <Container>
-          <NavbarBrand className="text-ghost" href="/">KACE GALEERY</NavbarBrand>
+          <NavbarBrand className="text-ghost" href="https://kace-study.github.io/react-photo-gallery/">KACE GALLERY</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="https://kace-study-blog.com/">Blog</NavLink>
+                <NavLink href="https://twitter.com/ace_tech_note?lang=ja">Twitter</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/kace-study/react-photo-gallery">GitHub</NavLink>
