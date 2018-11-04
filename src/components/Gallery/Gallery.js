@@ -11,7 +11,7 @@ class Gallery extends Component {
     this.state = { photos: [] }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.search('');
   }
 
